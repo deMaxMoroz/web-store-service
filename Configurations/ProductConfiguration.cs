@@ -10,7 +10,7 @@ namespace LearnWebAPI.Configurations
         {
             builder.HasKey(p => p.Id);
             builder.HasMany(p => p.Reviews).WithOne(r => r.Product).HasForeignKey(r=>r.ProductId);
-
+            
         }
     }
 }
